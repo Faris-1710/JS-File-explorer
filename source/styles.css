@@ -1,0 +1,167 @@
+:root {
+	--topbtn_count: 3;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	scrollbar-width: none;
+	background-color: #0d0d0d;
+}
+
+body::-webkit-scrollbar, textarea::-webkit-scrollbar {
+    display: none;
+}
+
+input:focus, button:focus {
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+.top_bar input {
+	width: calc(100% - var(--topbtn_count) * 70px);
+	background-color: #141414;
+	border-color: transparent;
+	color: white;
+	caret-color: white;
+	transition: 250ms ease;
+}
+
+.top_bar input:hover, .top_bar input:focus {
+	background-color: #252525;
+}
+
+.top_bar button {
+	width: 50px;
+	background-color: #141414;
+	border-color: transparent;
+	color: white;
+	transition: 250ms ease;
+}
+
+.top_bar button:hover {
+	background-color: #252525;
+}
+
+.directory_btn {
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+	width: 100%;
+	text-align: left;
+}
+
+.directory_btn:hover {
+	background-color: #141414;
+}
+
+#file_output {
+	color: white;
+	background-color: #141414;
+	border-radius: 10px;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+#top_btn {
+	position: fixed;
+	bottom: 12px;
+	right: 12px;
+	background-color: #121212;
+	border-color: transparent;
+	color: white;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+}
+
+#create {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	top: 7.5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #121212;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 0 9999px #000000b0
+}
+
+.create_btn {
+	background-color: #141414;
+	border-color: transparent;
+	color: white;
+	transition: 250ms ease;
+}
+
+.create_btn:hover {
+	background-color: #101010;
+}
+
+#create_input {
+	background-color: #101010;
+	border-color: transparent;
+	border-bottom-color: white;
+	color: white;
+	caret-color: white;
+	transition: 250ms ease;
+}
+
+#create_input:hover, #create_input:focus {
+	background-color: #252525;
+}
+
+#create_cancel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 100%;
+}
+
+#file_edit {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 7.5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #121212;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 0 9999px #000000b0;
+	width: 80%;
+}
+
+#file_edit_input {
+	width: 100%;
+	min-height: 100%;
+	resize: vertical;
+	outline: none;
+	border-color: transparent;
+	background-color: #050505;
+	color: white;
+	overflow: hidden;
+}
+
+#file_edit_save, #file_edit_cancel {
+	background-color: #050505;
+	border-color: transparent;
+	color: white;
+	transition: 250ms ease;
+	width: 10%;
+	padding: 0;
+}
+
+#file_edit_save:hover, #file_edit_cancel:hover {
+	background-color: #101010;
+}

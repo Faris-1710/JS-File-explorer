@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>File explorer</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script defer src="render.js"></script>
+	</head>
+	<body>
+		<div class="top_bar" align="center">
+			<button id="parentdirbtn">←</button>
+			<input id="textinput" />
+			<button id="readbtn">Go</button>
+			<button id="open_cmd">CMD</button>
+			<button id="close_file" style="width: 25px" hidden="hidden">X</button>
+		</div>
+		<hr>
+		<div id="main">
+			<h5 id="output"></h5>
+		</div>
+		<div id="file_data" hidden="hidden">
+			<h5 id="file_output"></h5>
+		</div>
+		<div id="create" hidden="hidden">
+			<h3 align="center">Create</h3>
+			<input id="create_input">
+			<button id="create_folder" class="create_btn">Folder</button>
+			<button id="create_file" class="create_btn">File</button>
+			<button id="create_cancel" class="create_btn">X</button>
+		</div>
+		<div id="file_edit" hidden="hidden">
+			<h3 align="center">Edit file</h3>
+			<textarea id="file_edit_input"></textarea><br>
+			<button id="file_edit_save">Save</button>
+			<button id="file_edit_cancel">Cancel</button>
+		</div>
+
+		<a href="#top"><button id="top_btn">↑</button></a>
+	</body>
+</html>
